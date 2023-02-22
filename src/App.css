@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+*{
+  font-family: 'Ubuntu', 'Verdana';
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+*::-webkit-scrollbar{
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.stopwatch{
   display: flex;
   flex-direction: column;
+  width: 40vh;
+  padding: 20px;
+  margin: auto;
+}
+.stopwatch > p{
+  font-size: 5vh;
+  text-align: center;
+}
+.stopwatch > *{
+  margin: 10px;
+}
+.chart, .self-care{
+  width: 80%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.self-care{
+  width: 60%;
+  height: 400px;
+}
+
+.header{
+  background-color: #319795
+}
+
+.app{
+  overflow: hidden;
+}
+
+
+@media screen and (max-width: 800px){
+  .help{
+    background-color: #319773;
+    scrollbar-width: 30px;
+    overflow: auto;
+    max-height: 30px;
+  }
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;  
+  justify-content: space-between;
+  padding: 10px;
+}
+.header > span{
+  color: white;
+  font-size: xx-large;
+  font-weight: bolder;
+  margin: 0px 6px 0px 6px;
+  cursor: pointer;
+}
+
+.header > Modal > ModalContent > ModalFooter {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer{
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heart {
+  color: red;
 }
