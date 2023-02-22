@@ -26,6 +26,7 @@
   width: 80%;
   margin: auto;
   margin-bottom: 50px;
+  height: 60vh;
 }
 
 .self-care{
@@ -64,6 +65,16 @@
   font-weight: bolder;
   margin: 0px 6px 0px 6px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 710px){
+   .header > span{
+    font-size: x-large;
+   }
+   .chart {
+    height: 60vh;
+    margin-top: 30px;
+   }
 }
 
 .header > Modal > ModalContent > ModalFooter {

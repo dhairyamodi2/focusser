@@ -56,9 +56,9 @@ const Chart : React.FC = () => {
                             type: 'logarithmic',
                            
                         },
-
                         
-                    }
+                    },
+                    maintainAspectRatio : false
                 }
             } data={
                 {

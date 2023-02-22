@@ -10,7 +10,10 @@ const Header: React.FC<ModalState> = ({isOpen, onOpen, onClose}) => {
             <span className="material-symbols-outlined">
                 crisis_alert
             </span>
-            <Text align={'center'} color='white' fontWeight={'bold'} fontSize={'large'}>It's all a game of dopamine. You see that line in chart increasing, more determined you will be in  outperforming your past performance.</Text>
+            <Text align={'center'} color='white' fontWeight={'bold'} fontSize={window.innerWidth > 710 ?'large' : 'medium'}>
+                {window.innerWidth > 710 && "It's all a game of dopamine. You see that line in chart increasing, more determined you will be in  outperforming your past performance."}
+                {window.innerWidth <= 710 && "Outperform your past performance, get the dopamine spike!"}
+            </Text>
             <span className="material-symbols-outlined" onClick={onOpen}>
                 question_mark
             </span>
